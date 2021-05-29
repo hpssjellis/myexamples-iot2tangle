@@ -9,6 +9,14 @@ source $HOME/.cargo/env
 
 
 
+streams explorer
+
+```
+
+https://explorer.iota.org/mainnet/streams/0/
+```
+
+
 first test
 
 
