@@ -1,0 +1,26 @@
+
+<script>
+//const fetch = require("node-fetch");
+
+var raw = JSON.stringify({"iot2tangle":[{"sensor":"Address","data":[{"name":"Tangle 2 Steet"}]},{"sensor":"Camera","data":[{"cars":"10","pedestrians":"3","scooters":"0","accidents":"prova"}]}],"device":"DEVICE_ID_1","timestamp":0});
+
+var requestOptions = {
+  method: 'POST',
+  headers: {"Content-Type":"application/json"},
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://127.0.0.1:8080/sensor_data", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+
+
+</script>
+
+<input type=button value=go onclick="{
+
+
+
+}">
